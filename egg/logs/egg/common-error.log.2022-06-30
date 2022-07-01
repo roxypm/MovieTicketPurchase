@@ -1,0 +1,624 @@
+2022-06-17 10:30:24,226 ERROR 1968 [-/127.0.0.1/-/6ms GET /getUser] nodejs.TypeError: Cannot read properties of undefined (reading 'query')
+    at UserController.getUser (D:\华清\egg\app\controller\user.js:6:41)
+    at Object.callFn (D:\华清\egg\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\华清\egg\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\华清\egg\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\华清\egg\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\华清\egg\node_modules\koa-compose\index.js:44:32)
+    at next (D:\华清\egg\node_modules\koa-compose\index.js:45:18)
+    at D:\华清\egg\node_modules\@eggjs\router\lib\router.js:186:18
+    at dispatch (D:\华清\egg\node_modules\koa-compose\index.js:44:32)
+    at D:\华清\egg\node_modules\koa-compose\index.js:36:12
+
+pid: 1968
+hostname: DESKTOP-IBMOKDA
+
+2022-06-24 14:47:00,080 ERROR 13144 [-/127.0.0.1/-/1ms POST /register] nodejs.TypeError: Cannot read properties of undefined (reading '0')
+    at UserController.register (D:\华清\egg\app\controller\user.js:23:44)
+    at Object.callFn (D:\华清\egg\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\华清\egg\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\华清\egg\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\华清\egg\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\华清\egg\node_modules\koa-compose\index.js:44:32)
+    at next (D:\华清\egg\node_modules\koa-compose\index.js:45:18)
+    at D:\华清\egg\node_modules\@eggjs\router\lib\router.js:186:18
+    at dispatch (D:\华清\egg\node_modules\koa-compose\index.js:44:32)
+    at D:\华清\egg\node_modules\koa-compose\index.js:36:12
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 13144
+hostname: DESKTOP-IBMOKDA
+
+2022-06-24 14:48:55,234 ERROR 13144 [-/127.0.0.1/-/226ms POST /register] nodejs.TypeError: Cannot read properties of undefined (reading '0')
+    at UserController.register (D:\华清\egg\app\controller\user.js:23:44)
+    at Object.callFn (D:\华清\egg\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\华清\egg\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\华清\egg\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\华清\egg\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\华清\egg\node_modules\koa-compose\index.js:44:32)
+    at next (D:\华清\egg\node_modules\koa-compose\index.js:45:18)
+    at D:\华清\egg\node_modules\@eggjs\router\lib\router.js:186:18
+    at dispatch (D:\华清\egg\node_modules\koa-compose\index.js:44:32)
+    at D:\华清\egg\node_modules\koa-compose\index.js:36:12
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 13144
+hostname: DESKTOP-IBMOKDA
+
+2022-06-24 14:49:34,968 ERROR 13144 [-/127.0.0.1/-/1ms POST /register] nodejs.TypeError: Cannot read properties of undefined (reading '0')
+    at UserController.register (D:\华清\egg\app\controller\user.js:23:44)
+    at Object.callFn (D:\华清\egg\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\华清\egg\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\华清\egg\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\华清\egg\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\华清\egg\node_modules\koa-compose\index.js:44:32)
+    at next (D:\华清\egg\node_modules\koa-compose\index.js:45:18)
+    at D:\华清\egg\node_modules\@eggjs\router\lib\router.js:186:18
+    at dispatch (D:\华清\egg\node_modules\koa-compose\index.js:44:32)
+    at D:\华清\egg\node_modules\koa-compose\index.js:36:12
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 13144
+hostname: DESKTOP-IBMOKDA
+
+2022-06-24 15:21:12,749 ERROR 9620 nodejs.ServerNoResponseError: server 127.0.0.1:64189 no response in 20010ms, maybe the socket is end on the other side. (address: 127.0.0.1:64189)
+    at Timeout._onTimeout (D:\华清\egg\node_modules\tcp-base\lib\base.js:427:21)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+name: "ServerNoResponseError"
+pid: 9620
+hostname: DESKTOP-IBMOKDA
+
+2022-06-24 15:23:47,515 ERROR 17476 nodejs.ClusterClientNoResponseError: client no response in 194778ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\华清\egg\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+name: "ClusterClientNoResponseError"
+pid: 17476
+hostname: DESKTOP-IBMOKDA
+
+2022-06-24 15:35:40,486 ERROR 13200 nodejs.ServerNoResponseError: server 127.0.0.1:64189 no response in 20004ms, maybe the socket is end on the other side. (address: 127.0.0.1:64189)
+    at Timeout._onTimeout (D:\华清\egg\node_modules\tcp-base\lib\base.js:427:21)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+name: "ServerNoResponseError"
+pid: 13200
+hostname: DESKTOP-IBMOKDA
+
+2022-06-24 15:43:20,336 ERROR 17476 nodejs.ClusterClientNoResponseError: client no response in 499865ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\华清\egg\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+name: "ClusterClientNoResponseError"
+pid: 17476
+hostname: DESKTOP-IBMOKDA
+
+2022-06-24 15:44:14,108 ERROR 916 [-/127.0.0.1/-/19ms POST /registerUser] nodejs.ReferenceError: path is not defined
+    at UserController.registerUser (D:\华清\egg\app\controller\user.js:29:22)
+    at Object.callFn (D:\华清\egg\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\华清\egg\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\华清\egg\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\华清\egg\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\华清\egg\node_modules\koa-compose\index.js:44:32)
+    at next (D:\华清\egg\node_modules\koa-compose\index.js:45:18)
+    at D:\华清\egg\node_modules\@eggjs\router\lib\router.js:186:18
+    at dispatch (D:\华清\egg\node_modules\koa-compose\index.js:44:32)
+    at D:\华清\egg\node_modules\koa-compose\index.js:36:12
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 916
+hostname: DESKTOP-IBMOKDA
+
+2022-06-24 15:44:42,760 ERROR 10736 [-/127.0.0.1/-/26ms POST /registerUser] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`insert into user(user_name,password,phone,sex,user_img) value('af','sfa','gag',' at line 1
+    at Query.Sequence._packetToError (D:\华清\egg\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\华清\egg\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\华清\egg\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\华清\egg\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\华清\egg\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\华清\egg\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\华清\egg\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\华清\egg\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (D:\华清\egg\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\华清\egg\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\华清\egg\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\华清\egg\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\华清\egg\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (D:\华清\egg\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\华清\egg\node_modules\co\index.js:65:19)
+    at D:\华清\egg\node_modules\co\index.js:54:5
+    sql: `insert into user(user_name,password,phone,sex,user_img) value('af','sfa','gag','女','http://localhost:8080/public/upload/1656056682754877945486.jpg')`
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`insert into user(user_name,password,phone,sex,user_img) value('af','sfa','gag',' at line 1"
+sqlState: "42000"
+index: 0
+sql: "`insert into user(user_name,password,phone,sex,user_img) value('af','sfa','gag','女','http://localhost:8080/public/upload/1656056682754877945486.jpg')`"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 10736
+hostname: DESKTOP-IBMOKDA
+
+2022-06-24 15:46:09,598 ERROR 4672 [-/127.0.0.1/-/23ms POST /registerUser] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`insert into user(user_name,password,phone,user_img,sex) value('af','sfa','gag',' at line 1
+    at Query.Sequence._packetToError (D:\华清\egg\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\华清\egg\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\华清\egg\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\华清\egg\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\华清\egg\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\华清\egg\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\华清\egg\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\华清\egg\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (D:\华清\egg\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\华清\egg\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\华清\egg\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\华清\egg\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\华清\egg\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (D:\华清\egg\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\华清\egg\node_modules\co\index.js:65:19)
+    at D:\华清\egg\node_modules\co\index.js:54:5
+    sql: `insert into user(user_name,password,phone,user_img,sex) value('af','sfa','gag','http://localhost:8080/public/upload/1656056769593877945486.jpg','女')`
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`insert into user(user_name,password,phone,user_img,sex) value('af','sfa','gag',' at line 1"
+sqlState: "42000"
+index: 0
+sql: "`insert into user(user_name,password,phone,user_img,sex) value('af','sfa','gag','http://localhost:8080/public/upload/1656056769593877945486.jpg','女')`"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 4672
+hostname: DESKTOP-IBMOKDA
+
+2022-06-24 15:47:22,006 ERROR 4672 [-/127.0.0.1/-/4297ms POST /registerUser] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`insert into user(user_name,password,phone,user_img,sex) value('af','sfa','gag',' at line 1
+    at Query.Sequence._packetToError (D:\华清\egg\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\华清\egg\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\华清\egg\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\华清\egg\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\华清\egg\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\华清\egg\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\华清\egg\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\华清\egg\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (D:\华清\egg\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\华清\egg\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\华清\egg\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\华清\egg\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\华清\egg\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (D:\华清\egg\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\华清\egg\node_modules\co\index.js:65:19)
+    at D:\华清\egg\node_modules\co\index.js:54:5
+    sql: `insert into user(user_name,password,phone,user_img,sex) value('af','sfa','gag','http://localhost:8080/public/upload/1656056842002877945486.jpg','女')`
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`insert into user(user_name,password,phone,user_img,sex) value('af','sfa','gag',' at line 1"
+sqlState: "42000"
+index: 0
+sql: "`insert into user(user_name,password,phone,user_img,sex) value('af','sfa','gag','http://localhost:8080/public/upload/1656056842002877945486.jpg','女')`"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 4672
+hostname: DESKTOP-IBMOKDA
+
+2022-06-27 10:56:12,043 ERROR 4304 [-/127.0.0.1/-/16ms POST /login] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'
+    at Query.Sequence._packetToError (D:\华清\egg\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\华清\egg\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\华清\egg\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\华清\egg\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\华清\egg\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\华清\egg\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\华清\egg\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\华清\egg\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (D:\华清\egg\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\华清\egg\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\华清\egg\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\华清\egg\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\华清\egg\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (D:\华清\egg\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\华清\egg\node_modules\co\index.js:65:19)
+    at D:\华清\egg\node_modules\co\index.js:54:5
+    sql: select user_id,user_name,password from user where user_name=undefined and password = undefined
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'undefined' in 'where clause'"
+sqlState: "42S22"
+index: 0
+sql: "select user_id,user_name,password from user where user_name=undefined and password = undefined"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 4304
+hostname: DESKTOP-IBMOKDA
+
+2022-06-27 10:56:43,291 ERROR 3776 [-/127.0.0.1/-/17ms POST /login] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'
+    at Query.Sequence._packetToError (D:\华清\egg\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\华清\egg\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\华清\egg\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\华清\egg\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\华清\egg\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\华清\egg\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\华清\egg\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\华清\egg\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (D:\华清\egg\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\华清\egg\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\华清\egg\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\华清\egg\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\华清\egg\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (D:\华清\egg\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\华清\egg\node_modules\co\index.js:65:19)
+    at D:\华清\egg\node_modules\co\index.js:54:5
+    sql: select user_id,user_name,password from user where user_name=undefined and password = undefined
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'undefined' in 'where clause'"
+sqlState: "42S22"
+index: 0
+sql: "select user_id,user_name,password from user where user_name=undefined and password = undefined"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 3776
+hostname: DESKTOP-IBMOKDA
+
+2022-06-27 10:57:07,697 ERROR 3776 [-/127.0.0.1/-/2ms POST /login] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'
+    at Query.Sequence._packetToError (D:\华清\egg\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\华清\egg\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\华清\egg\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\华清\egg\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\华清\egg\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\华清\egg\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\华清\egg\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\华清\egg\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (D:\华清\egg\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\华清\egg\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\华清\egg\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\华清\egg\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\华清\egg\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (D:\华清\egg\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\华清\egg\node_modules\co\index.js:65:19)
+    at D:\华清\egg\node_modules\co\index.js:54:5
+    sql: select user_id,user_name,password from user where user_name=undefined and password = undefined
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'undefined' in 'where clause'"
+sqlState: "42S22"
+index: 0
+sql: "select user_id,user_name,password from user where user_name=undefined and password = undefined"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 3776
+hostname: DESKTOP-IBMOKDA
+
+2022-06-27 10:58:17,905 ERROR 3140 [-/127.0.0.1/-/18ms POST /login] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'
+    at Query.Sequence._packetToError (D:\华清\egg\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\华清\egg\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\华清\egg\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\华清\egg\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\华清\egg\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\华清\egg\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\华清\egg\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\华清\egg\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (D:\华清\egg\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\华清\egg\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\华清\egg\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\华清\egg\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\华清\egg\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (D:\华清\egg\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\华清\egg\node_modules\co\index.js:65:19)
+    at D:\华清\egg\node_modules\co\index.js:54:5
+    sql: select user_id,user_name,password from user where user_name=undefined and password = undefined
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'undefined' in 'where clause'"
+sqlState: "42S22"
+index: 0
+sql: "select user_id,user_name,password from user where user_name=undefined and password = undefined"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 3140
+hostname: DESKTOP-IBMOKDA
+
+2022-06-27 10:58:57,905 ERROR 13064 [-/127.0.0.1/-/18ms POST /login] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'
+    at Query.Sequence._packetToError (D:\华清\egg\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\华清\egg\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\华清\egg\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\华清\egg\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\华清\egg\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\华清\egg\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\华清\egg\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\华清\egg\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (D:\华清\egg\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\华清\egg\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\华清\egg\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\华清\egg\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\华清\egg\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (D:\华清\egg\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\华清\egg\node_modules\co\index.js:65:19)
+    at D:\华清\egg\node_modules\co\index.js:54:5
+    sql: select user_id,user_name,password from user where user_name=undefined and password = undefined
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'undefined' in 'where clause'"
+sqlState: "42S22"
+index: 0
+sql: "select user_id,user_name,password from user where user_name=undefined and password = undefined"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 13064
+hostname: DESKTOP-IBMOKDA
+
+2022-06-27 11:00:36,611 ERROR 13064 [-/127.0.0.1/-/5374ms POST /login] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'
+    at Query.Sequence._packetToError (D:\华清\egg\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\华清\egg\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\华清\egg\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\华清\egg\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\华清\egg\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\华清\egg\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\华清\egg\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\华清\egg\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (D:\华清\egg\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\华清\egg\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\华清\egg\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\华清\egg\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\华清\egg\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (D:\华清\egg\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\华清\egg\node_modules\co\index.js:65:19)
+    at D:\华清\egg\node_modules\co\index.js:54:5
+    sql: select user_id,user_name,password from user where user_name=undefined and password = undefined
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'undefined' in 'where clause'"
+sqlState: "42S22"
+index: 0
+sql: "select user_id,user_name,password from user where user_name=undefined and password = undefined"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 13064
+hostname: DESKTOP-IBMOKDA
+
+2022-06-27 11:01:24,862 ERROR 8232 [-/127.0.0.1/-/15ms POST /login] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'
+    at Query.Sequence._packetToError (D:\华清\egg\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\华清\egg\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\华清\egg\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\华清\egg\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\华清\egg\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\华清\egg\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\华清\egg\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\华清\egg\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (D:\华清\egg\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\华清\egg\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\华清\egg\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\华清\egg\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\华清\egg\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (D:\华清\egg\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\华清\egg\node_modules\co\index.js:65:19)
+    at D:\华清\egg\node_modules\co\index.js:54:5
+    sql: select user_id,user_name,password from user where user_name=undefined and password = undefined
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'undefined' in 'where clause'"
+sqlState: "42S22"
+index: 0
+sql: "select user_id,user_name,password from user where user_name=undefined and password = undefined"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 8232
+hostname: DESKTOP-IBMOKDA
+
+2022-06-27 11:01:46,985 ERROR 8096 [-/127.0.0.1/-/17ms POST /login] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[object Object] and password = 123456' at line 1
+    at Query.Sequence._packetToError (D:\华清\egg\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\华清\egg\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\华清\egg\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\华清\egg\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\华清\egg\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\华清\egg\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\华清\egg\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\华清\egg\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (D:\华清\egg\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\华清\egg\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\华清\egg\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\华清\egg\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\华清\egg\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (D:\华清\egg\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\华清\egg\node_modules\co\index.js:65:19)
+    at D:\华清\egg\node_modules\co\index.js:54:5
+    sql: select user_id,user_name,password from user where user_name=[object Object] and password = 123456
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[object Object] and password = 123456' at line 1"
+sqlState: "42000"
+index: 0
+sql: "select user_id,user_name,password from user where user_name=[object Object] and password = 123456"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 8096
+hostname: DESKTOP-IBMOKDA
+
+2022-06-27 11:02:10,950 ERROR 8096 [-/127.0.0.1/-/7845ms POST /login] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[object Object] and password = 123456' at line 1
+    at Query.Sequence._packetToError (D:\华清\egg\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\华清\egg\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\华清\egg\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\华清\egg\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\华清\egg\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\华清\egg\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\华清\egg\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\华清\egg\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (D:\华清\egg\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\华清\egg\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\华清\egg\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\华清\egg\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\华清\egg\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (D:\华清\egg\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\华清\egg\node_modules\co\index.js:65:19)
+    at D:\华清\egg\node_modules\co\index.js:54:5
+    sql: select user_id,user_name,password from user where user_name=[object Object] and password = 123456
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[object Object] and password = 123456' at line 1"
+sqlState: "42000"
+index: 0
+sql: "select user_id,user_name,password from user where user_name=[object Object] and password = 123456"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 8096
+hostname: DESKTOP-IBMOKDA
+
+2022-06-27 11:02:48,223 ERROR 13936 [-/127.0.0.1/-/15ms POST /login] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'cc' in 'where clause'
+    at Query.Sequence._packetToError (D:\华清\egg\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\华清\egg\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\华清\egg\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\华清\egg\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\华清\egg\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\华清\egg\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\华清\egg\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\华清\egg\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (D:\华清\egg\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\华清\egg\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\华清\egg\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\华清\egg\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\华清\egg\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (D:\华清\egg\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\华清\egg\node_modules\co\index.js:65:19)
+    at D:\华清\egg\node_modules\co\index.js:54:5
+    sql: select user_id,user_name,password from user where user_name=cc and password = 123456
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'cc' in 'where clause'"
+sqlState: "42S22"
+index: 0
+sql: "select user_id,user_name,password from user where user_name=cc and password = 123456"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 13936
+hostname: DESKTOP-IBMOKDA
+
+2022-06-27 13:32:39,612 ERROR 13008 nodejs.ClusterClientNoResponseError: client no response in 228368ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\华清\egg\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+name: "ClusterClientNoResponseError"
+pid: 13008
+hostname: DESKTOP-IBMOKDA
+
+2022-06-27 18:09:05,563 ERROR 2616 nodejs.ECONNRESETError: read ECONNRESET (address: 127.0.0.1:61720)
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "ECONNRESETError"
+pid: 2616
+hostname: DESKTOP-IBMOKDA
+
+2022-06-27 18:09:24,511 ERROR 2616 nodejs.ECONNRESETError: read ECONNRESET (address: 127.0.0.1:61720)
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "ECONNRESETError"
+pid: 2616
+hostname: DESKTOP-IBMOKDA
+
+2022-06-27 18:09:26,318 ERROR 13008 nodejs.ClusterClientNoResponseError: client no response in 78639ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\华清\egg\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+name: "ClusterClientNoResponseError"
+pid: 13008
+hostname: DESKTOP-IBMOKDA
+
+2022-06-27 18:09:43,469 ERROR 2616 nodejs.ECONNRESETError: read ECONNRESET (address: 127.0.0.1:61720)
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "ECONNRESETError"
+pid: 2616
+hostname: DESKTOP-IBMOKDA
+
+2022-06-27 18:10:02,428 ERROR 2616 nodejs.ECONNRESETError: read ECONNRESET (address: 127.0.0.1:61720)
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "ECONNRESETError"
+pid: 2616
+hostname: DESKTOP-IBMOKDA
+
+2022-06-30 22:21:49,631 ERROR 14588 nodejs.ClusterClientNoResponseError: client no response in 7170605ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\华清\egg\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+name: "ClusterClientNoResponseError"
+pid: 14588
+hostname: DESKTOP-IBMOKDA
+
+2022-06-30 22:58:35,237 ERROR 15936 [-/127.0.0.1/-/36ms GET /getMInfo] nodejs.ReferenceError: flag is not defined
+    at D:\华清\egg\app\controller\home.js:20:30
+    at Array.forEach (<anonymous>)
+    at UserController.getMInfo (D:\华清\egg\app\controller\home.js:19:20)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async D:\华清\egg\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\华清\egg\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\华清\egg\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\华清\egg\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\华清\egg\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\华清\egg\node_modules\koa-session\index.js:41:7)
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+pid: 15936
+hostname: DESKTOP-IBMOKDA
+
