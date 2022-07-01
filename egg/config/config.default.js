@@ -22,7 +22,7 @@ exports.cors = {
 //修改默认端口号7001为80
 exports.cluster = {
       listen: {
-        port: 80
+        port: 8080
       }
 };
 //数据库mysql配置
