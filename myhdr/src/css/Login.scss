@@ -1,0 +1,74 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.login {
+    width: 100vw;
+    height: 100vh;
+
+    // background-color: #c27f65;
+    h3 {
+        color: red;
+    }
+
+    .loginbox {
+        height: 500px;
+        width: 500px;
+        background-color: rgb(253, 200, 200);
+ 
+
+    }
+
+}
+.Xbox{
+    float: right;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(239, 239, 239);
+    font-size: 20px;
+
+}
+.Xbox:hover{
+    background-color: rgb(175, 175, 175);
+}
+
+.bottom {
+
+    background-image: url(../img/1bg.png);
+    background-repeat: no-repeat;
+}
+
+.tab {
+    display: flex;
+ padding: 30px;
+ 
+
+    h2 {
+        border-bottom: 3px solid black;
+    }
+}
+
+.pwdWay,
+.noteWay {
+    margin: 10px;
+    text-align: center;
+
+    input {
+        margin: 10px;
+        height: 45px;
+        width: 320px;
+        border: 1px solid rgb(201, 201, 201);
+        padding: 0px 20px;
+    }
+
+    .submit {
+        background-color: rgb(235, 93, 93);
+        color: white;
+        font-size: 18px;
+    }
+
+    .phone {
+        width: 280px;
+    }
+}
+ 

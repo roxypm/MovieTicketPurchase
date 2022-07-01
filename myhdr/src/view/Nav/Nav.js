@@ -10,7 +10,19 @@ function Nav() {
     let { pathname } = useLocation();
     //选中nav的样式
     const isShow = { backgroundColor: 'rgb(239,66,56)', color: '#fff', heigth: '100%', display: 'inline-block' }
+    const [userid, setUserid] = useState("")
+    function user() {
 
+        if (userid) {
+            <Link to={{ pathname: "/login" }}>
+                <UserOutlined style={{ fontSize: '38px', color: '#999', marginTop: '18px' }} />
+            </Link>
+        }
+        else {
+            // <img></img>
+            <div>头像</div>
+        }
+    }
     return (
         <header>
             <div className="headerNav">
@@ -38,7 +50,7 @@ function Nav() {
                         <Button type="primary" shape="circle" className="butt" icon={<SearchOutlined />} />
                     </div>
                     <div className="user">
-                        <UserOutlined style={{ fontSize: '38px', color: '#999', marginTop: '18px' }} />
+                        {user}
                     </div>
                 </div>
             </div>
