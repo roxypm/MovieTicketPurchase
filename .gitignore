@@ -1,0 +1,5 @@
+/myreact/node_modules/
+/myreact/.git/
+/egg/node_modules/
+/egg/logs/
+/egg/run/
