@@ -168,35 +168,41 @@ header .headerNav .right .user {
 
 .main .left dd .mimg {
   position: absolute;
-  top: 0;
+  top: 0px;
   left: 0;
   width: 160px;
   height: 220px;
-  background-size: 160px 220px;
-  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAABQCAMAAACpg44GAAAAbFBMVEUiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiK2HsfSAAAAJHRSTlPMxr63q6OahzclHRULBgHCsZOOf3p1cGtmYVxXUk1IQz4wLBAszz8hAAAAhklEQVRo3u3OxY0DAAADsBxDmZn337FTVPIjnsAZ4/zgCOcHhzg/+MBlgPOD/zg/+Ifzg3dcbrj84vzgFZcLLmdcTrgccTngssdlh8sWlw0ua1xWuCxxWeDyg/ODc1xmuHzj/OAXzg9+4vzgFJcPnB98x/nBCS5vOD9YVVVVVVVVVVVVr/IEUdzLcLhtP2AAAAAASUVORK5CYII=");
+  z-index: -0.1;
+  background-size: 160px 260px;
+  overflow: hidden;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAABQCAMAAACpg44GAAAAbFBMVEUiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiK2HsfSAAAAJHRSTlPMxr63q6OahzclHRULBgHCsZOOf3p1cGtmYVxXUk1IQz4wLBAszz8hAAAAhklEQVRo3u3OxY0DAAADsBxDmZn337FTVPIjnsAZ4/zgCOcHhzg/+MBlgPOD/zg/+Ifzg3dcbrj84vzgFZcLLmdcTrgccTngssdlh8sWlw0ua1xWuCxxWeDyg/ODc1xmuHzj/OAXzg9+4vzgFJcPnB98x/nBCS5vOD9YVVVVVVVVVVVVr/IEUdzLcLhtP2AAAAAASUVORK5CYII=") repeat-x bottom;
 }
 
 .main .left dd img {
   width: 160px;
   height: 220px;
+  overflow: hidden;
 }
 
-.main .left dd span:nth-child(even) {
+.main .left dd .sc {
   position: absolute;
   left: 5px;
   top: 190px;
   color: #fff;
   font-size: 16px;
-  z-index: 1000;
+  width: 115px;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
-.main .left dd span:nth-child(odd) {
+.main .left dd .na {
   position: absolute;
   right: 5px;
   top: 190px;
   color: #fff;
   font-size: 18px;
-  z-index: 1000;
   color: #ffb400;
 }
 
@@ -487,7 +493,7 @@ header .headerNav .right .user {
 .main .right .dp .right1 .num {
   display: inline-block;
   margin-top: 15px;
-  margin-left: 25px;
+  margin-left: 17px;
   font-size: 30px;
   font-weight: 700;
   color: #ef4238;
@@ -505,7 +511,7 @@ header .headerNav .right .user {
   color: #999;
   display: inline-block;
   margin-top: 6px;
-  margin-left: 25px;
+  margin-left: 20px;
 }
 
 .titleQ {
@@ -528,7 +534,8 @@ header .headerNav .right .user {
   height: 100px;
   margin: 0 auto;
   display: flex;
-  margin-top: -40px;
+  position: sticky;
+  bottom: 0;
   background-color: #262426;
 }
 

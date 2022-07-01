@@ -9,7 +9,7 @@ class UserController extends Controller{
         let mNext=[];
         let mHot=[];
         let result=await this.app.mysql.query(sql);
-        console.log(result);
+        
         if (result.length == 0) {
             ctx.body = {
                 code: 0,
@@ -25,9 +25,10 @@ class UserController extends Controller{
                     mHot.push(ele);
                 }
             });
+            console.log(mHot);
             ctx.body = {
                 code: 1,
-                movie:[mNow,mNext,mHot]
+                movie:[mNow,mNext,mHot,result]
             }
 
         } 
