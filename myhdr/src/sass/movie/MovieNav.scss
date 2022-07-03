@@ -1,0 +1,41 @@
+.bottom1 {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 80px;
+  background-color: #47464a;
+  height: 60px;
+  width: 100%;
+  min-width: 1200px;
+
+  ul {
+    display: block;
+    font-size: 16px;
+    color: #999;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 40px;
+    background-color: transparent;
+
+    li {
+      display: inline-flex;
+      list-style: none;
+      margin-right: 50px;
+      position: relative;
+      &.active {
+        color: red;
+        &:after {
+          position: absolute;
+          content: '';
+          width: 0;
+          height: 0;
+          border: 10px solid transparent;
+          border-bottom-color: #fff;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+}
