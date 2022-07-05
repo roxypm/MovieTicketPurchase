@@ -35,24 +35,24 @@
   border: 2px solid #f0f0f0;
 }
 
-.UserInfo .UserInfobox .Uright form {
+.UserInfo .UserInfobox .Uright .Info form {
   display: flex;
   margin-left: 50px;
 }
 
-.UserInfo .UserInfobox .Uright form input {
+.UserInfo .UserInfobox .Uright .Info form input {
   margin: 10px;
   line-height: 40px;
   width: 200px;
 }
 
-.UserInfo .UserInfobox .Uright form .usex > input {
+.UserInfo .UserInfobox .Uright .Info form .usex > input {
   margin: 10px;
   line-height: 40px;
   width: 50px;
 }
 
-.UserInfo .UserInfobox .Uright form .usersubmit {
+.UserInfo .UserInfobox .Uright .Info form .usersubmit {
   background-color: #de4949;
   border-radius: 20%;
   border: 1px solid #933535;
@@ -61,11 +61,11 @@
   margin-left: 140px;
 }
 
-.UserInfo .UserInfobox .Uright form .uImgbox {
+.UserInfo .UserInfobox .Uright .Info form .uImgbox {
   margin: 20px;
 }
 
-.UserInfo .UserInfobox .Uright form .uImgbox img {
+.UserInfo .UserInfobox .Uright .Info form .uImgbox img {
   height: 250px;
   width: 200px;
   background-color: #6f92b0;
