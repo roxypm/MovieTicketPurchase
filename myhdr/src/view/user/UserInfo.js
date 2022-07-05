@@ -7,15 +7,17 @@ function UserInfo() {
     const [tabv, setTabv] = useState("myInfo")
     const [no, setNo] = useState("")
     const [pwd, setPwd] = useState("")
+    const [pwd2, setPwd2] = useState("")
     const [name, setName] = useState("")
     const [sex, setSex] = useState("")
     const [img, setImg] = useState("")
+
     const imgRef = useRef()
     useEffect(() => {
         console.log("useEffect()")
         { UserIn() }
     }, [])
-    function tabway(way) {
+    function tabvway(way) {
         setTabv(way)
     }
     // 获取用户信息
@@ -55,7 +57,7 @@ function UserInfo() {
 
     function regist(e) {
         e.preventDefault();
-        console.log(no, pwd, name, sex);
+        console.log(no, pwd, pwd2,name, sex);
         console.log(imgRef.current.files[0]);
         let file = imgRef.current.files[0];
         let formData = new FormData();
@@ -87,16 +89,14 @@ function UserInfo() {
     }
     return (
         <div className="UserInfo">
-
             <div className="UserInfobox">
                 <div className="Uleft">
                     <h1>个人中心</h1>
-                    <h2>基本信息</h2>
-                    <h2>我的订单</h2>
-
+                    <h2 onClick={tabvway.bind(null, "myInfo")} className={(tabv == 'myInfo' ? 'tabedd' : 'none')}>基本信息</h2>
+                    <h2 onClick={tabvway.bind(null, "myOrder")} className={(tabv == 'myOrder' ? 'tabedd' : 'none')}>我的订单</h2>
                 </div>
                 <div className="Uright">
-                    <div className="Info">
+                    <div className="Info"  style={{ display: (tabv == 'myInfo' ? 'block' : 'none') }}>
                         <h3>基本信息</h3>
                         <form onSubmit={regist}>
                             <div className="uImgbox">
@@ -107,8 +107,8 @@ function UserInfo() {
                         
                            手机号码： <input onChange={e => (setNo(e.target.value))} value={no} placeholder={no}></input>    <br />
                                 用户昵称： <input onChange={e => (setName(e.target.value))} value={name} placeholder={name}></input>    <br />
-                                用户密码： <input onChange={e => (setPwd(e.target.value))} value={pwd} placeholder={pwd}></input>    <br />
-                               
+                                用户密码： <input type="password" onChange={e => (setPwd(e.target.value))} value={pwd} placeholder="请输入密码"/>    <br />
+                                再次确认： <input type="password" onChange={e => (setPwd2(e.target.value))} value={pwd2} placeholder="请再输入密码"/>    <br />
                          
                            <div className="usex">
                             性别： 
@@ -123,8 +123,16 @@ function UserInfo() {
                         </form>
 
                     </div>
-                    <div className="order">
+                    <div className="Order"  style={{ display: (tabv == 'myOrder' ? 'block' : 'none') }}>
                         <h2>order</h2>
+                        <h2>order</h2>
+                        <h2>order</h2>
+                        <h2>order</h2>
+                        <h2>order</h2>
+                        <h2>order</h2>
+                        <h2>order</h2>
+                        <h2>order</h2>
+
                     </div>
                 </div>
             </div>
