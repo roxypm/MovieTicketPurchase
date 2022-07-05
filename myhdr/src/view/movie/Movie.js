@@ -55,7 +55,7 @@ function Movie () {
                 <MovieMid ageSelect={ageSelect} setAgeSelect={setAgeSelect} areaSelect={areaSelect} setAreaSelect={setAreaSelect} movieTypeSelect={movieTypeSelect} setMovieTypeSelect={setMovieTypeSelect} />
                 <Paixu timeSort={timeSort} setTimeSort={setTimeSort} scoreSort={scoreSort} setScoreSort={setScoreSort} />
                 <List page={page} setPage={setPage} listMap={listMap} />
-                <Footer />
+                {/* <Footer /> */}
             </div>
 
         </div >
