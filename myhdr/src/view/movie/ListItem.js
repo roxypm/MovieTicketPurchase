@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import '../../sass/movie/ListItem.scss'
 function ListItem ({ info }) {
   const [hoverState, setHoverState] = useState(false)
+  const navigate = useNavigate()
   function handleEnter (ev) {
     setHoverState(true)
     console.log(ev, 'handleEnter')
@@ -10,8 +12,13 @@ function ListItem ({ info }) {
     setHoverState(false)
     console.log(ev, 'handleLeave')
   }
+  function tiaozhuan (params) {
+    console.log(1111)
+    console.log(params)
+    navigate({ pathname: '/moviedetail/' + params })
+  }
   return (
-    <div className='list-item'>
+    <div className='list-item' onClick={tiaozhuan.bind(null, info.id)}>
       <div className={hoverState ? 'card active ' : 'card'} onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
         <img src={info.movie_img} alt="" />
         {

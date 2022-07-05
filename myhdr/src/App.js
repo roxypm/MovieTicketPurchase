@@ -13,7 +13,7 @@ function App () {
       <BrowserRouter>
         <Routes>
           <Route path="/*" element={<MainPage />} />
-          <Route path="/movie" element={<Movie />} />
+          {/* <Route path="/movie" element={<Movie />} /> */}
           <Route path="/map" element={<MapShow />} />
           <Route path="/login" element={<Login />} />
         </Routes>
