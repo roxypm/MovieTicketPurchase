@@ -40,7 +40,7 @@ function ListItem ({ info }) {
 
       </div>
       <div className='list-info-box'>
-        {info.title}
+        {info.movie_name}
       </div>
       <div className='list-info-box2'>
         {info.score}

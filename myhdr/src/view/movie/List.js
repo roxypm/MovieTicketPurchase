@@ -1,11 +1,7 @@
 import ListItem from './ListItem'
 import '../../sass/movie/List.scss'
-
 import React, { useState, useEffect } from "react"
 function List ({ page, setPage, listMap }) {
-
-
-
   // const listMap = {
   //   'nowShowing': [{
   //     title: "人生大事",
@@ -75,18 +71,31 @@ function List ({ page, setPage, listMap }) {
   //     content: "333xxx"
   //   }],
   // }
-
+  let newEle
+  if (listMap.length) {
+    newEle = listMap.map((item, index) => {
+      return (
+        <ListItem info={item} key={index}></ListItem>
+      )
+    })
+  }
+  else {
+    newEle = (
+      <h3 style={{ marginLeft: '20px' }}>抱歉，没有找到相关结果，请尝试用其他条件筛选。</h3>
+    )
+  }
   return (
     <div className='movieLists'>
       {/* {page} */}
       {/* {JSON.stringify(listMap[page])} */}
-      {
+      {newEle}
+      {/* {
         listMap.map((item, index) => {
           return (
             <ListItem info={item} key={index}></ListItem>
           )
         })
-      }
+      } */}
       {/* {JSON.stringify(new Array(6 - listMap.length % 6).fill(''))} */}
       {
         new Array(6 - listMap.length % 6).fill('').map((item, idx) => {
