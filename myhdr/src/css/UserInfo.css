@@ -37,10 +37,28 @@
 
 .UserInfo .UserInfobox .Uright form {
   display: flex;
+  margin-left: 50px;
 }
 
 .UserInfo .UserInfobox .Uright form input {
   margin: 10px;
+  line-height: 40px;
+  width: 200px;
+}
+
+.UserInfo .UserInfobox .Uright form .usex > input {
+  margin: 10px;
+  line-height: 40px;
+  width: 50px;
+}
+
+.UserInfo .UserInfobox .Uright form .usersubmit {
+  background-color: #de4949;
+  border-radius: 20%;
+  border: 1px solid #933535;
+  width: 60px;
+  color: white;
+  margin-left: 140px;
 }
 
 .UserInfo .UserInfobox .Uright form .uImgbox {

@@ -34,9 +34,25 @@
 
             form {
                 display: flex;
-                // width: 200px;
-                input{
+                // width: 600px;
+                margin-left:50px;
+                 input{
                     margin: 10px;
+                    line-height: 40px;
+                     width: 200px;
+                }
+                .usex>input{
+                    margin: 10px;
+                    line-height: 40px;
+                     width: 50px;
+                }
+                .usersubmit{  
+                    background-color: rgb(222, 73, 73);
+                    border-radius:20% ;
+                    border: 1px solid rgb(147, 53, 53);
+                    width: 60px;
+                    color: white;
+                    margin-left:140px;
                 }
                 .uImgbox {
                  margin: 20px;

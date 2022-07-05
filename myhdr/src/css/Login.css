@@ -4,25 +4,46 @@
 }
 
 .login {
+  margin: 20px;
   width: 100vw;
   height: 100vh;
-  background-image: url(../img/1bg.png);
   position: relative;
+  display: flex;
 }
 
 .login h3 {
   color: red;
 }
 
+.login .left {
+  margin: 30px;
+}
+
+.login .left .LLogo {
+  display: flex;
+}
+
+.login .left .LLogo h1 {
+  font-size: 36px;
+  color: #d70000;
+}
+
+.login .left .LLogo img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 30%;
+}
+
+.login .left .Ltupian img {
+  margin: 50px;
+}
+
 .login .loginbox {
   height: 500px;
   width: 550px;
-  background-color: rgba(252, 252, 252, 0.95);
-  border: 3px solid #fdcbcb;
   padding-top: 30px;
-  position: absolute;
-  top: 10%;
-  left: 30%;
+  margin: 60px;
 }
 
 .Xbox {
@@ -55,7 +76,6 @@
 .pwdWay,
 .noteWay {
   margin: 10px;
-  text-align: center;
 }
 
 .pwdWay input,

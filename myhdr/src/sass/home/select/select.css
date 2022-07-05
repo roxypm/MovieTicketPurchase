@@ -1,0 +1,241 @@
+.sbox {
+  display: flex;
+  margin-top: 100px !important;
+  width: 1200px;
+  height: 530px;
+  border: 1px solid #e5e5e5;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.sbox .sleft {
+  width: 820px;
+}
+
+.sbox .sleft .stop {
+  margin-top: 30px;
+  width: 402px;
+  height: 26px;
+  margin-left: 180px;
+  display: flex;
+}
+
+.sbox .sleft .stop div {
+  width: 100px;
+  margin-right: 30px;
+  font-size: 16px;
+  color: #666;
+}
+
+.sbox .sleft .screen {
+  margin-left: 100px;
+  width: 550px;
+  padding-top: 50px;
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  background-position-x: center;
+  position: relative;
+  margin-bottom: 40px;
+  background: url("../../../img/screen.png") no-repeat;
+}
+
+.sbox .sleft .srows {
+  float: left;
+  margin-left: 50px;
+  margin-top: 8px;
+}
+
+.sbox .sleft .srows .row {
+  font-size: 16px;
+  color: #999;
+  margin-right: 40px;
+  margin-bottom: 10px;
+  width: 20px;
+  height: 26px;
+  line-height: 29px;
+  text-align: center;
+}
+
+.sbox .sleft .seat {
+  margin-left: 190px;
+  width: 430px;
+}
+
+.sbox .sleft .seat img {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.sbox .sright {
+  width: 380px;
+  background-color: #f9f9f9;
+}
+
+.sbox .sright .ibox {
+  width: 115px;
+  height: 158px;
+  border: 2px solid #fff;
+}
+
+.sbox .sright .rtop {
+  display: flex;
+  margin: 20px 20px;
+  width: 340px;
+  height: 162px;
+}
+
+.sbox .sright .rtop img {
+  width: 115px;
+  height: 158px;
+}
+
+.sbox .sright .rtop .text {
+  width: 200px;
+  height: 76px;
+  margin-left: 20px;
+}
+
+.sbox .sright .rtop .text p {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.sbox .sright .r {
+  font-size: 12px;
+  color: #999;
+}
+
+.sbox .sright .l {
+  color: #151515;
+  margin-left: 2px;
+}
+
+.sbox .sright .content {
+  margin: 20px 30px;
+}
+
+.sbox .sright .content span {
+  font-size: 14px;
+}
+
+.sbox .sright .content .rl {
+  color: #f03d37;
+}
+
+.sbox .sright .tiketInfo {
+  margin: 20px 30px;
+  border-top: 1px dashed #e5e5e5;
+  border-bottom: 1px dashed #e5e5e5;
+  height: 130px;
+  width: 340px;
+}
+
+.sbox .sright .tiketInfo .xp {
+  font-size: 14px;
+  color: #999;
+}
+
+.sbox .sright .tiketInfo .c {
+  color: #f03d37;
+}
+
+.sbox .sright .isOk {
+  margin-left: 60px;
+  margin-top: 20px;
+  width: 260px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  background-color: #dedede;
+  border-radius: 21px;
+}
+
+.sbox .sright .t {
+  font-size: 12px;
+  color: #f03d37;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin: 3px 12px 10px 0;
+  background: url("../../../img/tiketbg.png") no-repeat;
+}
+
+.name {
+  padding: 26px 0;
+  color: #ec443f;
+  font-size: 18px;
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 30px;
+  width: 922px;
+  height: 77px;
+}
+
+.Info {
+  width: 882px;
+  height: 188px;
+  border: 1px solid #e5e5e5;
+  margin: 0 40px 30px 0;
+}
+
+.Info .Iheader {
+  background-color: #f7f7f7;
+  font-size: 14px;
+  padding: 16px 20px;
+}
+
+.Info .Iheader .orderT {
+  color: #333;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.Info .Iheader .orderN {
+  color: #999;
+}
+
+.Info .odrerInfo {
+  width: 860px;
+  height: 95px;
+  padding: 20px;
+}
+
+.Info .timg {
+  width: 66px;
+  height: 91px;
+  border: 2px solid #fff;
+}
+
+.Info .Tcontent {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  margin: 4px 0 7px -6px;
+}
+
+.Info .zw {
+  font-size: 12px;
+  color: #999;
+}
+
+.Info .sj {
+  font-size: 12px;
+  color: #f03d37;
+}
+
+.Info .dj, .Info .zj {
+  height: 95px;
+  font-size: 16px;
+  color: #333;
+  width: 12%;
+  line-height: 95px;
+}

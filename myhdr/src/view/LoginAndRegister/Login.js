@@ -1,5 +1,8 @@
 import React, { useState } from "react"
+
 import axios from 'axios'
+import logo from "../../img/logo.png";
+import Lotupian from "../../img/logintupian.png"
 import { Link, useNavigate } from 'react-router-dom'
 import { CloseOutlined, PhoneOutlined, LockOutlined } from '@ant-design/icons'
 function Login() {
@@ -12,7 +15,7 @@ function Login() {
         e.preventDefault();
         if (!(telStr.test(no))) {
             alert("手机格式错误")
-        }else{
+        } else {
             console.log(no, pwd);
             const url = "http://127.0.0.1:8080/userLogin";
             let res = await axios.post(url, { no, pwd })
@@ -26,17 +29,17 @@ function Login() {
                 let d = new Date();
                 d.setTime(d.getTime() + (1200 * 60 * 1000));
                 let t = d.toGMTString()
-    
+
                 document.cookie = `userid=${data.userid};expires=${t}`
                 console.log(" document.cookie ", document.cookie);
                 navigate({ pathname: '/' })
             } else {
                 alert("账号或密码错误")
             }
-    
+
         }
-        
-        
+
+
     }
     async function nlogin(e) {
         e.preventDefault();
@@ -57,9 +60,21 @@ function Login() {
     return (
         <div className="LO">
             <div className="login" >
+                <div className="left">
+                    <Link to={{ pathname: "/" }}>
+                        <div className="LLogo">
+                            <img src={logo} />
+                            <h1>GO影院</h1>
+                        </div>
+                    </Link>
+                    <div className="Ltupian">
+                        <img src={Lotupian} />
+                    </div>
+
+                </div>
 
                 <div className="loginbox">
-                    <Link to={{ pathname: "/" }}>  <div className="Xbox"><CloseOutlined /></div></Link>
+                    {/* <Link to={{ pathname: "/" }}>  <div className="Xbox"><CloseOutlined />返回首页</div></Link> */}
                     <div className="tab">
                         <h2 onClick={tabway.bind(null, "pwdWay")} className={(tabWay == 'pwdWay' ? 'tabed' : 'none')}>密码登录</h2> &nbsp;&nbsp;&nbsp;&nbsp;
                         <h2 onClick={tabway.bind(null, "noteWay")} className={(tabWay == 'noteWay' ? 'tabed' : 'none')}>短信登录</h2>
@@ -67,26 +82,30 @@ function Login() {
                     <div className="tabbox" >
                         <div className="pwdWay" style={{ display: (tabWay == 'pwdWay' ? 'block' : 'none') }}>
                             <form onSubmit={plogin}>
-                                &nbsp; <PhoneOutlined /> <input className="No" type="text" onChange={e => (setNo(e.target.value))} value={no} placeholder="请输入账号（手机号）" />{phonejudge()}<br />
+                                <PhoneOutlined /><input className="No" type="text" onChange={e => (setNo(e.target.value))} value={no} placeholder="请输入账号（手机号）" />{phonejudge()}<br />
                                 <LockOutlined /><input className="Pwd" type="password" onChange={e => (setPwd(e.target.value))} value={pwd} placeholder="请输入密码" /><br />
                                 &nbsp; &nbsp; <input className="submit" type="submit" value="登  录" />
                             </form>
                         </div>
                         <div className="noteWay" style={{ display: (tabWay == 'noteWay' ? 'block' : 'none') }}>
                             <form onSubmit={nlogin}>
-                                &nbsp;<PhoneOutlined /> <input className="phone" type="text" onChange={e => (setNo(e.target.value))} value={no} placeholder="请输入手机号" />
+                                 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                <PhoneOutlined /><input className="phone" type="text" onChange={e => (setNo(e.target.value))} value={no} placeholder="请输入手机号" />
                                 {phonejudge()}
                                 <br />
                                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                                 <input className="ma" type="text" onChange={e => (setPwd(e.target.value))} value={pwd} placeholder="请输入验证码" />
                                 <span>发送验证码</span>
                                 <br />
-                                &nbsp; &nbsp; <input className="submit" type="submit" value="登  录" />
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                <input className="submit" type="submit" value="登  录" />
+                                <div className="tips">
+                     &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                注：未登录过的账号自动注册
+                        </div>
                             </form>
                         </div>
-                        <div className="tips">
-                            注：未登录过的账号自动注册
-                        </div>
+                       
 
                     </div>
 

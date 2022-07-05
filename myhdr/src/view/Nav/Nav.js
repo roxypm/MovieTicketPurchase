@@ -1,16 +1,18 @@
-import axios from "axios";
+// import axios from "axios";
 import React, { useState, useEffect } from "react";
 import { SearchOutlined, UserOutlined } from '@ant-design/icons';
 import { Button, Input } from 'antd';
 import logo from "../../img/logo.png";
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import '../../sass/home/home.scss';
+import axios from "axios";
 
 function Nav() {
     let { pathname } = useLocation();
-
+    const [img, setImg] = useState("")
     //选中nav的样式
     const isShow = { backgroundColor: 'rgb(239,66,56)', color: '#fff', heigth: '100%', display: 'inline-block' }
+
     const navigate = useNavigate()
     // 退出登录
     function loginOut() {
@@ -24,13 +26,13 @@ function Nav() {
 
     }
     // 判断是否登录
-    function user() {
+  function user() {
         //获取cookie字符串
         var strCookie = document.cookie;
         //将多cookie切割为多个名/值对
         var arrCookie = strCookie.split("; ");
         var userId = undefined;
-        var userimg = "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2F68ed43688479acb5c54e787dcb8cdc06f81d8c106c6d-2I11A0_fw658&refer=http%3A%2F%2Fhbimg.b0.upaiyun.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1659506040&t=80f7b79c297625b1d6721fee887a601d"
+        var userimg = ""
         //遍历cookie数组，处理每个cookie对
         for (var i = 0; i < arrCookie.length; i++) {
             var arr = arrCookie[i].split("=");
@@ -49,16 +51,40 @@ function Nav() {
             )
         }
         else {
-            return (
 
+       {UserIn( userId)}
+
+            return (
                 <div className="userNav">
-                    <div > <Link to={{ pathname: "/userInfo" }}>  <img src={userimg} ></img></Link>  </div><br />
+                    <div >
+                        <Link to={{ pathname: "/userInfo" }}>
+                            <img src={img} />
+                        </Link>
+                    </div><br />
                     <div className="UNbox" onClick={loginOut}>退出登录</div>
                 </div>
 
             )
         }
     }
+
+     // 获取用户信息
+     async function UserIn(userId) {
+        // console.log("   async function UserIn(userId)",userId);
+        const url = "http://127.0.0.1:8080/UserIn";
+        let res = await axios.post(url, { userId })
+        let data = res.data
+        if (data.code == 0) {
+            // console.log("获取成功");
+            // console.log("UserIn", res.data.info[0]);
+        } else {
+            console.log("请求失败");
+        }
+        // console.log("usrimg", img,res.data.info[0].headimg);
+    setImg(res.data.info[0].headimg)
+    }
+
+
     return (
         <header>
             <div className="headerNav">
@@ -87,6 +113,9 @@ function Nav() {
                     </div>
                     <div className="user">
                         {user()}
+
+
+
                     </div>
                 </div>
             </div>
