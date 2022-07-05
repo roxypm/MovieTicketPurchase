@@ -112,6 +112,19 @@ header .headerNav .right .user {
   width: 78px;
   height: 80px;
   text-align: center;
+  overflow: hidden;
+}
+
+header .headerNav .right .user:hover {
+  overflow: visible;
+}
+
+header .headerNav .right .userNav {
+  margin-left: 10px;
+}
+
+header .headerNav .right .user:hover .userNav {
+  background-color: #f6f6f6;
 }
 
 .main {

@@ -1,14 +1,14 @@
 const Controller = require('egg').Controller;
 const path = require("path");
 const fs = require("fs");
-class User extends Controller{
+class User extends Controller {
     // 密码登录
-    async userLogin(){
-        const { ctx  } = this;
+    async userLogin() {
+        const { ctx } = this;
         //用于接收post 请求的参数
-       
+
         console.log("egg-userLogin");
-        console.log("ctx.request.body",ctx.request.body);
+        console.log("ctx.request.body", ctx.request.body);
         let result = await this.app.mysql.query(`SELECT userid,no,pwd from user where no='${ctx.request.body.no}'`);
         if (result.length == 0) {
             ctx.body = {
@@ -30,6 +30,27 @@ class User extends Controller{
                     code: 2,
                     msg: "密码错误~登录失败！"
                 };
+            }
+        }
+    }
+
+    //获取用户名和头像
+    async UserIn() {
+        const { ctx, app } = this;
+        // console.log("egg获取用户名和头像userid",ctx.session);
+        console.log("ctx.request.body", ctx.request.body);
+        let result = await this.app.mysql.query(`select * from user where userid ='${ctx.request.body.userId}'`);
+        console.log(result);
+        if (result.length != 0) {
+            ctx.body = {
+                code: 0,
+                info: result
+            }
+
+        } else {
+            ctx.body = {
+                code: 1,
+                msg: "查找失败！"
             }
         }
     }
@@ -236,6 +257,6 @@ class User extends Controller{
     }
 
     */
-    
+
 }
 module.exports = User;

@@ -1,10 +1,10 @@
 import React, { useState } from "react"
 import axios from 'axios'
-import {useNavigate} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 function Login() {
     const [no, setNo] = useState("")
     const [pwd, setPwd] = useState("")
-const navigate=useNavigate()
+    const navigate = useNavigate()
     async function login(e) {
         e.preventDefault();
         console.log(no, pwd);
@@ -18,12 +18,11 @@ const navigate=useNavigate()
                 // 浏览器关闭失效
                 // document.cookie=`no=${data.list[0].no}`
                 // 20秒后失效
-                let d=new Date();
-                d.setTime(d.getTime()+(20*60*1000));
-                let t=d.toGMTString()
-                document.cookie=`no=${data.list[0].no};expires=${t}`
-            
-                navigate({pathname:'/'})
+                let d = new Date();
+                d.setTime(d.getTime() + (20 * 60 * 1000));
+                let t = d.toGMTString()
+                document.cookie = `no=${data.list[0].no};expires=${t}`
+                navigate({ pathname: '/' })
             } else {
                 alert("账号或密码错误")
             }
