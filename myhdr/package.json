@@ -9,7 +9,9 @@
     "@testing-library/user-event": "^13.5.0",
     "antd": "^4.21.4",
     "axios": "^0.27.2",
+    "jquery": "^3.6.0",
     "react": "^18.1.0",
+    "react-bmapgl": "^0.2.7",
     "react-dom": "^18.1.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
@@ -42,5 +44,5 @@
   "devDependencies": {
     "node-sass": "^7.0.1"
   },
-  "proxy":"https://m.maoyan.com/ajax/movieOnInfoList"
+  "proxy": "https://m.maoyan.com/ajax/movieOnInfoList"
 }

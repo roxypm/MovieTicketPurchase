@@ -120,7 +120,6 @@ header .headerNav .right .user {
   margin: 0 auto;
   display: flex;
   margin-top: 80px;
-  overflow: scroll;
 }
 
 .main .left {
@@ -367,7 +366,7 @@ header .headerNav .right .user {
   font-style: italic;
 }
 
-.main .right .content .boxC .name {
+.main .right .content .boxC .hname {
   display: inline-block;
   max-width: 190px;
   overflow: hidden;

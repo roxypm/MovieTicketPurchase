@@ -9,4 +9,7 @@ module.exports = (app) => {
   //电影页面获取电影卡片列表信息
   router.get("/movieList", controller.movie.getMovieCard)
   router.post("/userLogin", controller.user.userLogin)
+
+  //请求影院信息
+  router.get("/cinema", controller.cinema.index);
 }

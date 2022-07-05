@@ -17,7 +17,7 @@ function Main() {
     const [tiket,setTiket] = useState([]);
    
     function getMInfo() {
-        axios.get('http://127.0.0.1:80/getMInfo').then((res) => {
+        axios.get('http://127.0.0.1:8080/getMInfo').then((res) => {
             // console.log(res);
             if (res.data.code == 1) {
                 setNow(res.data.movie[0]);
@@ -166,7 +166,7 @@ function Main() {
                     <div className='boxC' key={index}>
                     <div>
                         <span className='num'>{index+1}</span>
-                        <span className='name'>{item.movie_name}</span>
+                        <span className='hname'>{item.movie_name}</span>
                     </div>
                     <div>
                         <span className='pf'>{item.tiket}万</span>
@@ -223,7 +223,7 @@ function Main() {
                     <div className='boxC' key={index}>
                     <div>
                         <span className='num'>{index+1}</span>
-                        <span className='name'>{item.movie_name}</span>
+                        <span className='hname'>{item.movie_name}</span>
                     </div>
                     <div>
                         <span className='pf' style={{color:'#fdb863'}}>{item.movie_want}人想看</span>
@@ -262,7 +262,7 @@ function Main() {
                     <div className='boxC' key={index}>
                     <div>
                         <span className='num' style={{color:'#999'}}>{index+1}</span>
-                        <span className='name'>{item.movie_name}</span>
+                        <span className='hname'>{item.movie_name}</span>
                     </div>
                     <div>
                         <span className='pf' style={{color:'#fdb863'}}><i>{item.score}分</i></span>

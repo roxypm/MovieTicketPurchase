@@ -134,7 +134,7 @@ header {
     margin: 0 auto;
     display: flex;
     margin-top: 80px;
-    overflow: scroll;
+    // overflow: scroll;
     .left {
         width: 750px;
 
@@ -398,7 +398,7 @@ header {
                     font-style: italic;
                 }
 
-                .name {
+                .hname {
                     display: inline-block;
                     max-width: 190px;
                     overflow: hidden;
