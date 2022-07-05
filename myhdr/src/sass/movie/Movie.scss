@@ -1,0 +1,154 @@
+//影院筛选
+.cinema-detail-box {
+  width: 1200px;
+  // height: 445px;
+  // background-color: darkcyan;
+  border: 1.5px solid #e5e5e5;
+  margin: 40px auto;
+  .data {
+    width: 1160px;
+    height: 47px;
+    // background-color: darkcyan;
+    margin: 0 auto;
+    line-height: 47px;
+    color: #999999;
+    font-size: 14px;
+    border-bottom: 1px dashed #e5e5e5;
+    li {
+      display: inline-block;
+      margin-left: 30px;
+    }
+    a {
+      color: #333333;
+      font-size: 14px;
+    }
+    a:hover {
+      color: #f34d41;
+    }
+  }
+  .selectBox {
+    width: 1160px;
+    // height: 185px;
+    margin: 0 auto;
+    color: #999999;
+    // background-color: pink;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #e5e5e5;
+    .item-name {
+      width: 1040px;
+      // height: 60px;
+      // background-color: darkcyan;
+      margin-left: 40px;
+      margin-top: -29px;
+      li {
+        display: inline-block;
+        margin-left: 30px;
+        margin-top: 7px;
+        color: #333333;
+        &.active {
+          color: red;
+        }
+      }
+      a {
+        color: inherit;
+        font-size: 14px;
+      }
+      a:hover {
+        color: #f34d41;
+      }
+    }
+  }
+  .brand {
+    .cinema-name {
+      width: 1040px;
+      // height: 160px;
+      // background-color: darkcyan;
+      margin-left: 40px;
+      margin-top: -27px;
+      li {
+        display: inline-block;
+        margin-left: 30px;
+        margin-top: 7px;
+      }
+      a {
+        color: #333333;
+        font-size: 14px;
+      }
+      a:hover {
+        color: #f34d41;
+      }
+    }
+  }
+  .place {
+    .place-name {
+      width: 1040px;
+      // height: 60px;
+      // background-color: darkcyan;
+      margin-left: 40px;
+      margin-top: -29px;
+      li {
+        display: inline-block;
+        margin-left: 30px;
+        margin-top: 7px;
+      }
+      a {
+        color: #333333;
+        font-size: 14px;
+      }
+      a:hover {
+        color: #f34d41;
+      }
+    }
+  }
+  .type {
+    .type-name {
+      width: 1040px;
+      // height: 60px;
+      // background-color: darkcyan;
+      margin-left: 40px;
+      margin-top: -29px;
+      padding-bottom: 10px;
+
+      li {
+        display: inline-block;
+        margin-left: 30px;
+        margin-top: 7px;
+      }
+      a {
+        color: #333333;
+        font-size: 14px;
+      }
+      a:hover {
+        color: #f34d41;
+      }
+    }
+  }
+  .service {
+    width: 1160px;
+    // height: 28px;
+    margin: 0 auto;
+    color: #999999;
+    // background-color: pink;
+    margin-top: 10px;
+    .service-type {
+      width: 1040px;
+      // height: 30px;
+      // background-color: darkcyan;
+      margin-left: 40px;
+      margin-top: -29px;
+      li {
+        display: inline-block;
+        margin-left: 30px;
+        margin-top: 7px;
+      }
+      a {
+        color: #333333;
+        font-size: 14px;
+      }
+      a:hover {
+        color: #f34d41;
+      }
+    }
+  }
+}

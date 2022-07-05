@@ -1,0 +1,92 @@
+.list-item {
+  margin-bottom: 50px;
+  // border: 1px solid red;
+  // flex-basis: 10px;
+  // border: 1px solid red;
+  cursor: pointer;
+  &.placehold-block {
+    pointer-events: none; // 事件小透明
+    opacity: 0; // 外观小透明
+    // display: none;
+  }
+
+  position: relative;
+  padding: 0 20px;
+  .card {
+    position: relative;
+    width: 160.01px;
+
+    // height: 277px;
+    // border: 1px solid black;
+    // overflow: hidden;
+    transition: all 0.3s;
+    display: inline-flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+    // margin-right: 100px;
+    img {
+      width: 100%;
+    }
+    &.active {
+      transform: scale(1.36);
+      // border-radius: 20px;
+      border: 1px solid #efefef;
+      margin: -1px;
+      box-shadow: 0 0 8px #fff, 0 5px 13px rgba(0, 0, 0, 0.07);
+    }
+    .back-info-box {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 50%;
+      width: 100%;
+      background: white;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      padding: 16px;
+      // height: 150px;
+      box-sizing: border-box;
+      // position: absolute;
+      // z-index: 11;
+      // top: 150px;
+      background: #fff;
+      // width: 150px;
+      // text-overflow: ellipsis;
+      font-size: 12px;
+      line-height: 18px;
+      .type {
+        overflow: hidden;
+        white-space: nowrap; //强制不换行
+        text-overflow: ellipsis;
+        // color: #999;
+      }
+      .top-box {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .bottom-box {
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .list-info-box {
+    display: flex;
+    justify-content: center;
+    color: #333;
+    text-align: center;
+    font-size: 16px;
+  }
+  .list-info-box2 {
+    display: flex;
+    justify-content: center;
+    color: #ffb400;
+    font-size: 24px;
+    font-style: italic;
+    margin-top: 10px;
+    font-family: Microsoft YaHei, Helvetica, Arial, sans-serif;
+  }
+}
