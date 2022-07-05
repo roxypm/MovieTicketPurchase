@@ -120,6 +120,7 @@ header .headerNav .right .user {
   margin: 0 auto;
   display: flex;
   margin-top: 80px;
+  overflow: scroll;
 }
 
 .main .left {
@@ -534,8 +535,6 @@ header .headerNav .right .user {
   height: 100px;
   margin: 0 auto;
   display: flex;
-  position: sticky;
-  bottom: 0;
   background-color: #262426;
 }
 

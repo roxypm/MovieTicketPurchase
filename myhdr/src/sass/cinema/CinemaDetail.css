@@ -1,0 +1,156 @@
+.cinema-detail-box {
+  width: 1200px;
+  height: 445px;
+  border: 1.5px solid #E5E5E5;
+  margin: 40px auto;
+}
+
+.cinema-detail-box .data {
+  width: 1160px;
+  height: 47px;
+  margin: 0 auto;
+  line-height: 47px;
+  color: #999999;
+  font-size: 14px;
+  border-bottom: 1px dashed #E5E5E5;
+}
+
+.cinema-detail-box .data li {
+  display: inline-block;
+  margin-left: 20px;
+  color: #333333;
+  font-size: 14px;
+  line-height: 27px;
+  width: 80px;
+  height: 27px;
+  border-radius: 20px;
+  padding-left: 9px;
+  cursor: pointer;
+}
+
+.cinema-detail-box .data li:hover {
+  color: #F34D41;
+}
+
+.cinema-detail-box .brand {
+  width: 1160px;
+  height: 185px;
+  margin: 0 auto;
+  color: #999999;
+  margin-top: 10px;
+  border-bottom: 1px dashed #E5E5E5;
+}
+
+.cinema-detail-box .brand .cinema-name {
+  width: 1040px;
+  height: 160px;
+  margin-left: 40px;
+  margin-top: -27px;
+}
+
+.cinema-detail-box .brand .cinema-name li {
+  display: inline-block;
+  margin-left: 23px;
+  margin-top: 3px;
+  height: 27px;
+  line-height: 27px;
+  padding: 0px 7px 0px 7px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.cinema-detail-box .brand .cinema-name li:hover {
+  color: #F34D41;
+}
+
+.cinema-detail-box .place {
+  width: 1160px;
+  height: 68px;
+  margin: 0 auto;
+  color: #999999;
+  margin-top: 10px;
+  border-bottom: 1px dashed #E5E5E5;
+}
+
+.cinema-detail-box .place .place-name {
+  width: 1040px;
+  height: 60px;
+  margin-left: 40px;
+  margin-top: -29px;
+}
+
+.cinema-detail-box .place .place-name li {
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 5px;
+  height: 27px;
+  line-height: 27px;
+  padding: 0px 7px 0px 7px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.cinema-detail-box .place .place-name li:hover {
+  color: #F34D41;
+}
+
+.cinema-detail-box .type {
+  width: 1160px;
+  height: 68px;
+  margin: 0 auto;
+  color: #999999;
+  margin-top: 10px;
+  border-bottom: 1px dashed #E5E5E5;
+}
+
+.cinema-detail-box .type .type-name {
+  width: 1040px;
+  height: 60px;
+  margin-left: 40px;
+  margin-top: -29px;
+}
+
+.cinema-detail-box .type .type-name li {
+  display: inline-block;
+  margin-left: 23px;
+  margin-top: 5px;
+  height: 27px;
+  line-height: 27px;
+  padding: 0px 7px 0px 7px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.cinema-detail-box .type .type-name li:hover {
+  color: #F34D41;
+}
+
+.cinema-detail-box .service {
+  width: 1160px;
+  height: 28px;
+  margin: 0 auto;
+  color: #999999;
+  margin-top: 10px;
+}
+
+.cinema-detail-box .service .service-type {
+  width: 1040px;
+  height: 30px;
+  margin-left: 40px;
+  margin-top: -29px;
+}
+
+.cinema-detail-box .service .service-type li {
+  display: inline-block;
+  margin-left: 23px;
+  margin-top: 5px;
+  height: 27px;
+  line-height: 27px;
+  padding: 0px 7px 0px 7px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.cinema-detail-box .service .service-type li:hover {
+  color: #F34D41;
+}

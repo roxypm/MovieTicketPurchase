@@ -1,7 +1,5 @@
 import "antd/dist/antd.css";
-import "./css/Login.css"
 import MainPage from "./view/MainPage";
-import Login from "./view/LoginAndRegister/Login";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
@@ -9,7 +7,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/*" element={<MainPage />} />
-          <Route path="/login" element={<Login/>} />
+          <Route path="/login" element={<h1>hhhh</h1>} />
         </Routes>
       </BrowserRouter>
     </div>
