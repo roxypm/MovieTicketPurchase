@@ -28,24 +28,24 @@ function Main() {
     function showNow() {
         console.log(mNow);
         if (mNow != []) {
-            
+
             return mNow.map((mInfo, index) => {
                 // console.log(index);
                 return (
                     <dd className="mItem" key={index}>
                         <div>
-                        
+
                             <Link to={{ pathname: '/' }}>
                                 <img src={mInfo.movie_img} />
                                 <div className='mimg'>
                                 </div>
                                 <span><i>{mInfo.score}</i></span>
                                 <span>{mInfo.movie_name}</span>
-                                
-                                
-                                
+
+
+
                             </Link>
-                            
+
                         </div>
                         <div className='buygo'>
                             <Link to={{ pathname: '/' }} className="buy">
@@ -53,10 +53,10 @@ function Main() {
                             </Link>
                         </div>
                     </dd>
-                    
+
                 )
             })
-            
+
         }
 
     }

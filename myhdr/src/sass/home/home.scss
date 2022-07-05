@@ -118,7 +118,25 @@ header {
                 width: 78px;
                 height: 80px;
                 text-align: center;
+                // background-color: rgb(220, 142, 142);
+                overflow: hidden;
+
+                .userNav {
+                    // background-color: rgb(216, 216, 216);
+                    .UNbox{
+                
+                        // border: 1px solid gray;
+                    }
+                  
+                }
             }
+            .user:hover {
+                overflow: visible;
+            }
+            .user:hover .userNav{
+                background-color: rgb(237, 237, 237);
+            }
+            
 
         }
 
@@ -178,6 +196,7 @@ header {
             margin-top: 20px;
             width: 161px;
             height: 260px;
+
             .mimg {
                 position: absolute;
                 top: 0;
@@ -189,6 +208,7 @@ header {
                 background-size: 160px 220px;
                 background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAABQCAMAAACpg44GAAAAbFBMVEUiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiK2HsfSAAAAJHRSTlPMxr63q6OahzclHRULBgHCsZOOf3p1cGtmYVxXUk1IQz4wLBAszz8hAAAAhklEQVRo3u3OxY0DAAADsBxDmZn337FTVPIjnsAZ4/zgCOcHhzg/+MBlgPOD/zg/+Ifzg3dcbrj84vzgFZcLLmdcTrgccTngssdlh8sWlw0ua1xWuCxxWeDyg/ODc1xmuHzj/OAXzg9+4vzgFJcPnB98x/nBCS5vOD9YVVVVVVVVVVVVr/IEUdzLcLhtP2AAAAAASUVORK5CYII=');
             }
+
             img {
                 width: 160px;
                 height: 220px;
@@ -218,7 +238,7 @@ header {
                 .buy {
                     color: #fff;
                 }
-                
+
                 background-color: #ef4238;
             }
 

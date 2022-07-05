@@ -1,0 +1,56 @@
+.UserInfo {
+    width: 1100px;
+    height: 800px;
+    margin: 0 auto;
+
+    .UserInfobox {
+        margin: 10px;
+        margin-top: 90px;
+        background-color: rgb(231, 231, 231);
+        border: 2px solid rgb(253, 253, 253);
+        display: flex;
+
+        .Uleft {
+            width: 200px;
+            height: 600px;
+            text-align: center;
+            margin: 20px 0px;
+
+            h1 {
+                padding: 20px;
+            }
+
+            h2:hover {
+                background-color: red;
+            }
+        }
+
+        .Uright {
+            width: 900px;
+            height: 750px;
+            margin: 0 auto;
+            background-color: rgb(255, 255, 255);
+            border: 2px solid rgb(240, 240, 240);
+
+            form {
+                display: flex;
+                // width: 200px;
+                input{
+                    margin: 10px;
+                }
+                .uImgbox {
+                 margin: 20px;
+                //  background-color: rgb(196, 207, 216);
+                    img {
+                        height: 250px;
+                        width: 200px;
+                        background-color: rgb(111, 146, 176);
+                    }
+
+                }
+            }
+        }
+
+
+    }
+}
